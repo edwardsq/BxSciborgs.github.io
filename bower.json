@@ -1,0 +1,24 @@
+{
+  "name": "BxSciborgs.github.io",
+  "description": "BxSciborgs (1155) Website",
+  "main": "main.js",
+  "authors": [
+    "Karun Ellango"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/BxSciborgs/BxSciborgs.github.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-animate": "^1.4.8",
+    "angular-material": "^1.1.3",
+    "angular-nvd3": "1.0.8",
+    "angular-touch": "^1.6.4"
+  }
+}
