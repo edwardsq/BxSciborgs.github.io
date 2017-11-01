@@ -1,51 +1,34 @@
-$(function(){
-  //just make a variable to keep track of the data coming from Firebase
-  var data =[];
+(function(){
+  var newscript = document.createElement('script');
+     newscript.type = 'text/javascript';
+     newscript.async = true;
+     newscript.src = 'https://www.gstatic.com/firebasejs/3.0.2/firebase.js';
+  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(newscript);
+})();
 
-  //create a new connection to firebase
-  var ref = new Firebase('https://sciborgs-scouting-app.firebaseio.com/activities');
-
-  //listen to data updates from firebase
-  ref.on("value", function(snapshot){
-    console.log(snapshot.val() );
-    //when data updates at Firebase, put it in the data variable
-    data = snapshot.val();
-  })
-
-
-
-  $('#newActivity').submit(function(event){
-    var $form = $(this);
-    console.log("submit to Firebase");
-
-    //make the submit disabled
-    $form.find("#saveForm").prop('disabled', true);
-
-    //get the actual values that we will send to firebase
-    var titleToSend = $('#activityTitle').val();
-
-    console.log(titleToSend);
-
-    var descriptionToSend = $('#activityDescription').val();
-
-    console.log(descriptionToSend);
-
-    var categoryToSend = $('#activityCatagory').val();
-
-    console.log(categoryToSend);
-
-    //take the values from the form, and put them in an object
-    var newActivity = {
-      "description": descriptionToSend,
-      "title":titleToSend,
-      "type": categoryToSend
-    }
-    //put the new object into the data array
-    data.push(newActivity);
-    console.log(data);
-    //send the new data to Firebase
-		ref.set(data);
-
-    return false;
-  })
-})
+_setFormData = function setFormData (sel, data) {
+  console.info('setting form to data', data);
+  var inputList = document.querySelectorAll(sel + ' [name]');
+  [].forEach.call(inputList, function(input) {
+      console.log(input);
+      if (data[input.name] && data[input.name] !== "undefined") {
+        input.value = data[input.name];
+      }
+  });
+};
+var _fb;
+var fbToForm = function fbToForm (key, sel) {
+  var config = {
+    apiKey: "AIzaSyCmxZbtAWv6JqgM2NqtSqQsm67BFcHoPfY",
+    authDomain: "sciborgs-scouting-app.firebaseapp.com",
+    databaseURL: "https://sciborgs-scouting-app.firebaseio.com",
+    projectId: "sciborgs-scouting-app",
+    storageBucket: "sciborgs-scouting-app.appspot.com",
+    messagingSenderId: "372162650684"
+  };
+  firebase.initializeApp(config);
+    _fb = _fb && _fb.name === "fbToForm" ? _fb : firebase.initializeApp(config, "fbToForm");
+    _fb.database().ref('user-data/' + key).on('value', function(snapshot) {
+        _setFormData(sel, snapshot.val());
+    });
+};

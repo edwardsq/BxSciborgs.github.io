@@ -18,41 +18,71 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.4/nv.d3.js"></script>
       <script src="bower_components/angular-nvd3/dist/angular-nvd3.js"></script>
       <script src="https://cdn.firebase.com/js/client/2.2.0/firebase.js"></script>
-      <script src="js/Firebase.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+      <script src="js/FirebaseHandler.js"></script>
    </head>
-   <form action="" id="newActivity">
-         <header>
-           <h2>Submit a new Activity</h2>
-           <div>Tell us what you have been up to!</div>
-         </header>
-         <div>
-           <label class="desc" id="title1" for="Field1">Title: </label>
-           <div>
-             <input id="activityTitle" name="Field1" type="text" value="" tabindex="1">
-           </div>
+   <body>
+     <div class="container">
+       <div class="page-header">
+         <h1>Firebase Sample</h1>
+       </div>
+     </div>
+     <div class="container row">
+         <div class="col-xs-12">
+             <h2>Instructions:</h2>
+             <ul>
+                 <li>Create a firebase application on the <a href="https://console.firebase.google.com" target="blank">console</a></li>
+                 <li>Replace the information marked as &lt;REPLACE ME&gt; with the correct information from the project's console</li>
+             </ul>
+             <h2>Todo:</h2>
+             <p><strong><a href="https://www.firebase.com/docs/web/guide/user-auth.html">Add User Login</a></strong></p>
+             <p><strong><a href="https://www.firebase.com/docs/security/guide/user-security.html">Add Security Rules</a></strong></p>
          </div>
-         <div>
-           <label class="desc" id="description1" for="Field2">Description: </label>
-           <div>
-             <textarea id="activityDescription" name="Field2" spellcheck="true" rows="10" col="50" tabindex="2"></textarea>
-           </div>
+     </div>
+     <div class="container row">
+       <div class="col-xs-12">
+         <div class="form">
+           <form action="" class="form">
+             <div class="control-group">
+               <label for="first_name">Name</label>
+               <input type="text" name="first_name">
+             </div>
+             <div>
+               <button class="submit btn btn-primary">Save</button>
+             </div>
+           </form>
          </div>
-         <div>
-           <label class="desc" id="description3" for="category">Pick A Category</label>
-           <div>
-             <select id="activityCatagory" name="category" tabIndex="3">
-               <option value="blog">Blog Item</option>
-               <option value="portfolio">Porfolio</option>
-             </select>
-           </div>
-         </div>
-         <div>
-           <input id="saveForm" name="saveForm" type="submit" value="New Activity">
-         </div>
-       </form>
-       <br />
-       <br />
-     </body>
-   <script>
-   </script>
+       </div>
+     </div>
+     <script src="https://www.gstatic.com/firebasejs/3.0.2/firebase.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+     <script>
+     $.fn.getFormData = function() {
+       var fields = this.find('[name]');
+       var result = {};
+       $.each(fields, function (i, el) {
+         result[el.name] = el.value;
+       });
+       return result;
+     };
+     var config = {
+       apiKey: "AIzaSyCmxZbtAWv6JqgM2NqtSqQsm67BFcHoPfY",
+       authDomain: "sciborgs-scouting-app.firebaseapp.com",
+       databaseURL: "https://sciborgs-scouting-app.firebaseio.com",
+       projectId: "sciborgs-scouting-app",
+       storageBucket: "sciborgs-scouting-app.appspot.com",
+       messagingSenderId: "372162650684"
+     };
+     firebase.initializeApp(config);
+       var fb = firebase.initializeApp(config);
+       var user_id;
+       $('.submit').on('click', function (e) {
+         e.preventDefault();
+         var updates = {};
+         user_id = user_id ? user_id : fb.database().ref().child('user-data').push().key;
+         updates[user_id] = $('form').getFormData();
+         fb.database().ref().child('user-data').update(updates);
+       });
+     </script>
+   </body>
 </html>
