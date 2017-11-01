@@ -52,7 +52,7 @@
          </div>
        </div>
      </div>
-     <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/3.0.2/firebase.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
      <script>
      $.fn.getFormData = function() {
@@ -63,15 +63,14 @@
        });
        return result;
      };
-     var config = {
-       apiKey: "AIzaSyCmxZbtAWv6JqgM2NqtSqQsm67BFcHoPfY",
-       authDomain: "sciborgs-scouting-app.firebaseapp.com",
-       databaseURL: "https://sciborgs-scouting-app.firebaseio.com",
-       projectId: "sciborgs-scouting-app",
-       storageBucket: "sciborgs-scouting-app.appspot.com",
-       messagingSenderId: "372162650684"
-     };
-     firebase.initializeApp(config);
+   var config = {
+     apiKey: "AIzaSyCmxZbtAWv6JqgM2NqtSqQsm67BFcHoPfY",
+     authDomain: "sciborgs-scouting-app.firebaseapp.com",
+     databaseURL: "https://sciborgs-scouting-app.firebaseio.com",
+     projectId: "sciborgs-scouting-app",
+     storageBucket: "sciborgs-scouting-app.appspot.com",
+     messagingSenderId: "372162650684"
+   };
        var fb = firebase.initializeApp(config);
        var user_id;
        $('.submit').on('click', function (e) {
@@ -83,4 +82,4 @@
        });
      </script>
    </body>
-</html>
+ </html>

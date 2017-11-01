@@ -18,7 +18,7 @@ _setFormData = function setFormData (sel, data) {
 };
 var _fb;
 var fbToForm = function fbToForm (key, sel) {
-  var config = {
+  var config = config || {
     apiKey: "AIzaSyCmxZbtAWv6JqgM2NqtSqQsm67BFcHoPfY",
     authDomain: "sciborgs-scouting-app.firebaseapp.com",
     databaseURL: "https://sciborgs-scouting-app.firebaseio.com",
@@ -26,7 +26,6 @@ var fbToForm = function fbToForm (key, sel) {
     storageBucket: "sciborgs-scouting-app.appspot.com",
     messagingSenderId: "372162650684"
   };
-  firebase.initializeApp(config);
     _fb = _fb && _fb.name === "fbToForm" ? _fb : firebase.initializeApp(config, "fbToForm");
     _fb.database().ref('user-data/' + key).on('value', function(snapshot) {
         _setFormData(sel, snapshot.val());
