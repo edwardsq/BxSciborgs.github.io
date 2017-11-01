@@ -3,7 +3,7 @@ $(function(){
   var data =[];
 
   //create a new connection to firebase
-  var ref = new Firebase('https://sciborgs-scouting-app.firebaseio.com/');
+  var ref = new Firebase('https://sciborgs-scouting-app.firebaseio.com/activities');
 
   //listen to data updates from firebase
   ref.on("value", function(snapshot){
