@@ -20,83 +20,83 @@
       <script src="bower_components/angular-nvd3/dist/angular-nvd3.js"></script>
    </head>
    <body>
-     <div class="container">
-       <div class="page-header">
-         <h1>Firebase Sample</h1>
-       </div>
-     </div>
-     <div class="container row">
-       <div class="col-xs-12">
-         <div class="form">
-             <div class="control-group">
-               Location?
-               <select id="activityCatagory" name="Competitions" tabIndex="4">
-                 <option value="Championships">Championships</option>
-                 <option value="Hudson Valley">Hudson Valley</option>
-                 <option value="NYC">NYC</option>
-               </select>
-             </div>
-             <div class="control-group">
-               <br> Team Number <br>
-            <input type="text" name="Team_Number" id="teamnumber">
-            </div>
-            <form action="" class="Balls">
-              <div class="control-group">
-                <br> Balls <br>
-              </div>
-             <input type="text" name="Balls" id="balls">
-              </form>
-              <form action="" class="Gears">
-                <div class="control-group">
-                  <br> Gears <br>
-                </div>
-               <input type="text" name="Gears" id="Gears">
-                </form>
-                <form action="" class="Climbed">
-                  <div class="control-group">
-                   <br> Climbed?
-                    <select id="activityCatagory" name="Climbed" tabIndex="3">
-                      <option value="Yes">Yes</option>
-                      <option value="No">No</option>
-                    </select>
-                  </div>
-                  </form>
-             <div>
-               <button class="submit btn btn-primary">Save</button>
-             </div>
+      <div class="container">
+         <div class="page-header">
+            <h1>Firebase Sample</h1>
          </div>
-       </div>
-     </div>
-     <script src="https://www.gstatic.com/firebasejs/3.0.2/firebase.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
-     <script>
-     $.fn.getFormData = function() {
-       var fields = this.find('[name]');
-       var result = {};
-       $.each(fields, function (i, el) {
-         result[el.name] = el.value;
-       });
-       return result;
-     };
-   var config = {
-     apiKey: "AIzaSyCmxZbtAWv6JqgM2NqtSqQsm67BFcHoPfY",
-     authDomain: "sciborgs-scouting-app.firebaseapp.com",
-     databaseURL: "https://sciborgs-scouting-app.firebaseio.com",
-     projectId: "sciborgs-scouting-app",
-     storageBucket: "sciborgs-scouting-app.appspot.com",
-     messagingSenderId: "372162650684"
-   };
-       var fb = firebase.initializeApp(config);
-       var user_id;
-       $('.submit').on('click', function (e) {
-         e.preventDefault();
-         var updates = {};
-         var updates2 = {};
-         user_id = user_id ? user_id : fb.database().ref().child('w').push().key;
-         updates[user_id] = $('form').getFormData();
-         var path = 'Competitions/' + document.getElementById("activityCatagory").value + '/Teams/' + document.getElementById("teamnumber").value;
-         fb.database().ref().child(path).update(updates);
-       });
-     </script>
+      </div>
+      <div class="container row">
+         <div class="col-xs-12">
+            <div class="form">
+               <div class="control-group">
+                  Location?
+                  <select id="activityCatagory" name="Competitions" tabIndex="4">
+                     <option value="Championships">Championships</option>
+                     <option value="Hudson Valley">Hudson Valley</option>
+                     <option value="NYC">NYC</option>
+                  </select>
+               </div>
+               <div class="control-group">
+                  <br> Team Number <br>
+                  <input type="text" name="Team_Number" id="teamnumber">
+               </div>
+               <form action="" class="Balls">
+                  <div class="control-group">
+                     <br> Balls <br>
+                  </div>
+                  <input type="number" name="Balls" id="balls">
+               </form>
+               <form action="" class="Gears">
+                  <div class="control-group">
+                     <br> Gears <br>
+                  </div>
+                  <input type="number" name="Gears" id="Gears">
+               </form>
+               <form action="" class="Climbed">
+                  <div class="control-group">
+                     <br> Climbed?
+                     <select id="activityCatagory" name="Climbed" tabIndex="3">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                     </select>
+                  </div>
+               </form>
+               <div>
+                  <button class="submit btn btn-primary">Save</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="https://www.gstatic.com/firebasejs/3.0.2/firebase.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+      <script>
+         $.fn.getFormData = function() {
+           var fields = this.find('[name]');
+           var result = {};
+           $.each(fields, function (i, el) {
+             result[el.name] = el.value;
+           });
+           return result;
+         };
+         var config = {
+         apiKey: "AIzaSyCmxZbtAWv6JqgM2NqtSqQsm67BFcHoPfY",
+         authDomain: "sciborgs-scouting-app.firebaseapp.com",
+         databaseURL: "https://sciborgs-scouting-app.firebaseio.com",
+         projectId: "sciborgs-scouting-app",
+         storageBucket: "sciborgs-scouting-app.appspot.com",
+         messagingSenderId: "372162650684"
+         };
+           var fb = firebase.initializeApp(config);
+           var user_id;
+           $('.submit').on('click', function (e) {
+             e.preventDefault();
+             var updates = {};
+             var updates2 = {};
+             user_id = user_id ? user_id : fb.database().ref().child('w').push().key;
+             updates[user_id] = $('form').getFormData();
+             var path = 'Competitions/' + document.getElementById("activityCatagory").value + '/Teams/' + document.getElementById("teamnumber").value;
+             fb.database().ref().child(path).update(updates);
+           });
+      </script>
    </body>
- </html>
+</html>
