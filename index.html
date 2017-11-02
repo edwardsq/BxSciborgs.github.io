@@ -35,15 +35,31 @@
                  <option value="NYC">NYC</option>
                </select>
              </div>
-          <form action="" class="form">
-             <div class="control-group" id="teamnumber">
+             <div class="control-group">
                <br> Team Number <br>
-            <input type="text" name="Team_Number">
+            <input type="text" name="Team_Number" id="teamnumber">
             </div>
+            <form action="" class="Balls">
+              <div class="control-group">
+                <br> Balls <br>
+              </div>
+             <input type="text" name="Balls" id="balls">
+              </form>
+              <form action="" class="Gears">
+                <div class="control-group">
+                  <br> Gears <br>
+                </div>
+               <input type="text" name="Gears" id="Gears">
+                </form>
+                <form action="" class="Climbed">
+                  <div class="control-group">
+                    <br> Did they climb? Enter 1 for yes or 0 for no <br>
+                  </div>
+                 <input type="text" name="Climbed" id="Climbed">
+                  </form>
              <div>
                <button class="submit btn btn-primary">Save</button>
              </div>
-           </form>
          </div>
        </div>
      </div>
@@ -71,10 +87,11 @@
        $('.submit').on('click', function (e) {
          e.preventDefault();
          var updates = {};
+         var updates2 = {};
          user_id = user_id ? user_id : fb.database().ref().child('w').push().key;
          updates[user_id] = $('form').getFormData();
-         var test = 'Competitions/' + document.getElementById("activityCatagory").value + '/Teams';
-         fb.database().ref().child(test).update(updates);
+         var path = 'Competitions/' + document.getElementById("activityCatagory").value + '/Teams/' + document.getElementById("teamnumber").value;
+         fb.database().ref().child(path).update(updates);
        });
      </script>
    </body>
