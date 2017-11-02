@@ -4,7 +4,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width">
       <title>Sciborgs Website</title>
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/firebase.css">
       <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.4/nv.d3.css">
       <script src="js/FirebaseHandler.js"></script>
@@ -15,60 +15,28 @@
       <script src="bower_components/angular-messages/angular-messages.min.js"></script>
       <script src="bower_components/angular-touch/angular-touch.min.js"></script>
       <script src="bower_components/d3/d3.js"></script>
+      <script src="js/ui.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.4/nv.d3.js"></script>
       <script src="bower_components/angular-nvd3/dist/angular-nvd3.js"></script>
    </head>
    <body>
-      <div class="container">
-         <div class="page-header">
-            <h1>Firebase Sample</h1>
-         </div>
-      </div>
-      <div class="container row">
-         <div class="col-xs-12">
-            <div class="form">
-               <div class="control-group">
-                  Location?
-                  <select id="activityCatagory" name="Competitions" tabIndex="4">
-                     <option value="Championships">Championships</option>
-                     <option value="Hudson Valley">Hudson Valley</option>
-                     <option value="NYC">NYC</option>
-                  </select>
-               </div>
-               <div class="control-group">
-                  <br> Team Number <br>
-                  <input type="number" min="1" step="1" name="Team_Number" id="teamnumber" onkeypress="return event.charCode >= 48">
-               </div>
-               <form action="" class="Balls">
-                  <div class="control-group">
-                     <br> Balls <br>
-                  </div>
-                  <input type="number" min="0" step="1" name="Balls" id="balls" onkeypress="return event.charCode >= 48">
-               </form>
-               <form action="" class="Gears">
-                  <div class="control-group">
-                     <br> Gears <br>
-                  </div>
-                  <input type="number" min="0" step="1" name="Gears" id="gears" onkeypress="return event.charCode >= 48">
-               </form>
-               <form action="" class="Climbed">
-                  <div class="control-group">
-                     <br> Climbed?
-                     <select id="climbing" name="Climbed" tabIndex="3">
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
-                     </select>
-                  </div>
-               </form>
-               <div>
-                  <button class="submit btn btn-primary">Save</button>
-               </div>
+      <div ng-controller="uiCtrl" class="background" layout="column" layout-fill flex="90">
+      <div layout="column">
+        <div layout="column">
+          <md-toolbar>
+            <div class="box" layout="row" layout-align="center center" flex="10"> <!-- Status and Time -->
+               <a href="index.html"><div class="topbar">Home</div></a>
+               <a href="html/aboutus.html"><div class="topbar">About Us</div></a>
+               <a href="html/history.html"><div class="topbar">History</div></a>
+               <a href="html/contact.html"><div class="topbar">Contact</div></a>
+               <a href="html/firebase.html"><div class="topbar">Scouting</div></a>
             </div>
-         </div>
+          </div>
+          </md-toolbar>
+          <md-content flex>
+          </md-content>
+        </div>
       </div>
-      <script src="https://www.gstatic.com/firebasejs/3.0.2/firebase.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
-      <script src="js/FirebaseHandler.js"></script>
    </body>
 </html>
