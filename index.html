@@ -28,11 +28,18 @@
      <div class="container row">
        <div class="col-xs-12">
          <div class="form">
-           <form action="" class="form">
              <div class="control-group">
-               <label for="first_name">Test</label>
-               <input type="text" name="first_name">
+               <select id="activityCatagory" name="Competitions" tabIndex="4">
+                 <option value="Championships">Championships</option>
+                 <option value="Hudson Valley">Hudson Valley</option>
+                 <option value="NYC">NYC</option>
+               </select>
              </div>
+          <form action="" class="form">
+             <div class="control-group" id="teamnumber">
+               <br> Team Number <br>
+            <input type="text" name="Team_Number">
+            </div>
              <div>
                <button class="submit btn btn-primary">Save</button>
              </div>
@@ -64,9 +71,10 @@
        $('.submit').on('click', function (e) {
          e.preventDefault();
          var updates = {};
-         user_id = user_id ? user_id : fb.database().ref().child('user-data').push().key;
+         user_id = user_id ? user_id : fb.database().ref().child('w').push().key;
          updates[user_id] = $('form').getFormData();
-         fb.database().ref().child('user-data').update(updates);
+         var test = 'Competitions/' + document.getElementById("activityCatagory").value + '/Teams';
+         fb.database().ref().child(test).update(updates);
        });
      </script>
    </body>
