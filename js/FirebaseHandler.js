@@ -17,6 +17,18 @@ messagingSenderId: "372162650684"
   var fb = firebase.initializeApp(config);
   var user_id;
   $('.submit').on('click', function (e) {
+    if (document.getElementById("teamnumber").value == "") {
+      alert("Please enter a team number");
+      return;
+    }
+    if (document.getElementById("balls").value == "") {
+      alert("Please enter the amount of balls shot");
+      return;
+    }
+    if (document.getElementById("gears").value == "") {
+      alert("Please enter the amount of gears deposited");
+      return;
+    }
     e.preventDefault();
     var updates = {};
     user_id = user_id ? user_id : fb.database().ref().child('user_data').push().key;

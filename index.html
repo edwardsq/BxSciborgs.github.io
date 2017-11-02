@@ -38,19 +38,19 @@
                </div>
                <div class="control-group">
                   <br> Team Number <br>
-                  <input type="number" name="Team_Number" id="teamnumber">
+                  <input type="number" min="1" step="1" name="Team_Number" id="teamnumber" onkeypress="return event.charCode >= 48">
                </div>
                <form action="" class="Balls">
                   <div class="control-group">
                      <br> Balls <br>
                   </div>
-                  <input type="number" name="Balls" id="balls">
+                  <input type="number" min="0" step="1" name="Balls" id="balls" onkeypress="return event.charCode >= 48">
                </form>
                <form action="" class="Gears">
                   <div class="control-group">
                      <br> Gears <br>
                   </div>
-                  <input type="number" name="Gears" id="Gears">
+                  <input type="number" min="0" step="1" name="Gears" id="gears" onkeypress="return event.charCode >= 48">
                </form>
                <form action="" class="Climbed">
                   <div class="control-group">
