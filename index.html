@@ -5,38 +5,37 @@
       <meta name="viewport" content="width=device-width">
       <title>Sciborgs Website</title>
       <link rel="stylesheet" href="css/firebase.css">
-      <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.4/nv.d3.css">
-      <script src="js/FirebaseHandler.js"></script>
-      <script src="bower_components/angular/angular.min.js"></script>
-      <script src="bower_components/angular-animate/angular-animate.min.js"></script>
-      <script src="bower_components/angular-aria/angular-aria.min.js"></script>
-      <script src="bower_components/angular-material/angular-material.min.js"></script>
-      <script src="bower_components/angular-messages/angular-messages.min.js"></script>
-      <script src="bower_components/angular-touch/angular-touch.min.js"></script>
-      <script src="bower_components/d3/d3.js"></script>
-      <script src="js/ui.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.4/nv.d3.js"></script>
-      <script src="bower_components/angular-nvd3/dist/angular-nvd3.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <script src="../js/FirebaseHandler.js"></script>
    </head>
    <body>
-      <div ng-controller="uiCtrl" class="background" layout="column" layout-fill flex="90">
-      <div layout="column">
-        <div layout="column">
-          <md-toolbar>
-            <div class="box" layout="row" layout-align="center center" flex="10"> <!-- Status and Time -->
-               <a href="index.html"><div class="topbar">Home</div></a>
-               <a href="html/aboutus.html"><div class="topbar">About Us</div></a>
-               <a href="html/history.html"><div class="topbar">History</div></a>
-               <a href="html/contact.html"><div class="topbar">Contact</div></a>
-               <a href="html/firebase.html"><div class="topbar">Scouting</div></a>
+      <nav class="navbar navbar-inverse">
+         <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="#">Sciborgs</a>
             </div>
-          </div>
-          </md-toolbar>
-          <md-content flex>
-          </md-content>
-        </div>
-      </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+                  <li><a href="html/firebase.html">About Us</a></li>
+                  <li><a href="html/firebase.html">History</a></li>
+                  <li><a href="html/firebase.html">Contact</a></li>
+                  <li><a href="html/firebase.html">Scouting App</a></li>
+               </ul>
+               </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+         </div>
+         <!-- /.container-fluid -->
+      </nav>
    </body>
 </html>
