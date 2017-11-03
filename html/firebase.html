@@ -49,19 +49,19 @@
             </div>
             <div class="control-group">
                <br> Team Number <br>
-               <input type="number" min="1" step="1" name="Team_Number" id="teamnumber" onkeypress="return event.charCode >= 48">
+               <input type="number" min="1" step="1" name="Team_Number" id="teamnumber" onkeydown="javascript: return event.keyCode == 69 || 189 ? false : true">
             </div>
             <form action="" class="Balls">
                <div class="control-group">
                   <br> Balls <br>
                </div>
-               <input type="number" min="0" step="1" name="Balls" id="balls" onkeypress="return event.charCode >= 48">
+               <input type="number" min="0" step="1" name="Balls" id="balls" onkeydown="javascript: return event.keyCode == 69 || 189 ? false : true">
             </form>
             <form action="" class="Gears">
                <div class="control-group">
                   <br> Gears <br>
                </div>
-               <input type="number" min="0" step="1" name="Gears" id="gears" onkeypress="return event.charCode >= 48">
+               <input type="number" min="0" step="1" name="Gears" id="gears" onkeydown="javascript: return event.keyCode == 69 || 189 ? false : true">
             </form>
             <form action="" class="Climbed">
                <div class="control-group">
