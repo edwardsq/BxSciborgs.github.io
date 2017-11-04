@@ -1,3 +1,21 @@
 .navbar-link-text {
     color: #CCCC00;
 }
+.about{
+  background: url(../imgs/aboutUsBackground.jpg);
+  padding-top: 30px;
+  margin-top: -50px;
+}
+.aboutfirst{
+  background: url(../imgs/aboutFirstBackground.jpg);
+}
+html,body{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.yellowEnd{
+  background-color: #9e9e2a;
+}
+.blackEnd{
+  background-color: #1d1c1c;
+}

@@ -1,46 +1,105 @@
 <!DOCTYPE html>
 <html ng-app="Dashboard">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width">
-      <title>Sciborgs Website</title>
-      <link rel="stylesheet" href="css/main.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-     </head>
-   <body>
-     <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse">
-       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-       </button>
-       <a class="navbar-brand" href="#"><div class="navbar-link-text">Sciborgs</div></a>
-
-       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-         <ul class="navbar-nav mr-auto">
-           <li class="nav-item active">
-             <a class="nav-link" href="#"><div class="navbar-link-text">Home</div><span class="sr-only">(current)</span></a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="html/aboutus.html"><div class="navbar-link-text">About Us</div></a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="html/history.html"><div class="navbar-link-text">History</div></a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="html/contact.html"><div class="navbar-link-text">Contact</div></a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="html/firebase.html"><div class="navbar-link-text">Scouting App</div></a>
-           </li>
-         </ul>
-       </div>
-     </nav>
-     <br>
-     <br>
-     <div>
-       <img src="imgs/FrontPagePicture.png" class="img-fluid" alt="Responsive image">
-     </div>
-   </body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sciborgs Website</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <div class="navbar-link-text">Sciborgs</div>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              <div class="navbar-link-text">Home</div>
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">
+              <div class="navbar-link-text">About</div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/history.html">
+              <div class="navbar-link-text">History</div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/contact.html">
+              <div class="navbar-link-text">Contact</div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/firebase.html">
+              <div class="navbar-link-text">Scouting App</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <div>
+      <img src="imgs/FrontPagePicture.png" class="img-fluid" alt="Responsive image">
+    </div>
+    <div class="about" id="about">
+      <div class="container">
+        <br>
+        <h1 class="text-center" style="font-size: 48pt; color: #d3d3d3;" >About Us</h1>
+        <p class="text-center" style="font-size: 18pt; color: #d3d3d3;">
+          The Bronx Science Sciborgs represents the co-ed robotics team from one of the top public high schools in the city. With approximately 41 members on the team, who are subdivided into two departments, we are comprised of some of the brightest and the best of our school. Every member on the team shows a strong dedication and passion for what they do, whether it's within programming or construction. Each year, the Sciborgs design and build a robot in about six weeks for the FIRST robotics competition. However, we are not just a team about excelling in our craft or winning a competition, but also expanding our knowledge and carrying it on to others. Almost every member on the team starts out with little to no experience in their field. It is the team's goal to pass on the skills/knowledge of the veterans members to rookies who have a passion to learn, in hopes of shaping them into an educated and experienced engineer or programmer. We collaborate together in a multitude of ways to both learn and teach robotic technology to each other as well as to the community at large. We are here to build something big. We're here to create something magnificent. We're here to be a part of the force that is transforming the world. Join us as we head into competition with heart, spirit and determination.
+        </p>
+        <br>
+      </div>
+    </div>
+    <div class="container-fluid row aboutfirst no-gutters">
+      <div class="container col-md-4">
+        <br>
+        <h1 class="text-center" style="font-size: 42pt; color: #d3d3d3;" >About First</h1>
+        <p class="text-justify" style="font-size: 15pt; color: #d3d3d3;">
+            FIRST® (For Inspiration and Recognition of Science and Technology) — a 501(c)(3) not-for-profit public charity whose mission is to help develop students into tomorrow’s science and technology leaders and innovators — uses young people’s interest in, and fascination with, robots as the “honey” to draw them into a progression of fun, engaging robotics and research programs. In the process, they learn the importance of team building and mutual respect, gain self-confidence, and develop crucial leadership and life skills, as well as master much-in-demand STEM (science, technology, engineering, and math) knowledge. They are transforming into tomorrow’s leaders.
+          <br>
+            Kids building robots is a clever disguise for a rapidly expanding community devoted to altering our culture into one where scientists and engineers are celebrated and revered on the same level as athletes and celebrities. The goal of FIRST® is to open doors for all kids so that they may discover new interests and pathways, leading them to careers in science and engineering that they might never have considered. FIRST does this through four main programs: FIRST® Robotics Competiton, FIRST® Tech Challenge, FIRST® Lego League, and Junior FIRST® Lego League.
+        </p>
+        <p class="text-center">
+          <a class="btn btn-outline-secondary" href="http://firstinspires.org" role="button">Check out FIRST</a>
+        </p>
+      </div>
+      <div class="container col-md-4">
+        <br>
+        <br>
+        <br>
+        <img src="imgs/FIRST.png" class="img-fluid" alt="Responsive image">
+        <br>
+      </div>
+    </div>
+    <div class="container-fluid yellowEnd ">
+      <div class="container col-md-4">
+        <br>
+        <p class="text-center">
+          <a href="https://www.instagram.com/sciborgs1155/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2000px-Instagram_logo_2016.svg.png" width="20%" class="img-fluid" alt="Responsive image" style="margin-right:100px;"></a>
+          <a href="https://www.facebook.com/Sciborgs/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/2000px-F_icon.svg.png" width="20%" class="img-fluid" alt="Responsive image" style=""></a>
+          <a href="https://www.youtube.com/user/sciborgs"><img src="https://cdn.fyne.in/mobi_commerce/55b7687b1401d/personalizer/svg/icon-youtube.svg" width="20%" class="img-fluid" alt="Responsive image" style="margin-left: 100px;"></a>
+        </p>
+        <br>
+      </div>
+    </div>
+    <div class="container-fluid blackEnd">
+      <br>
+      <p class="text-center" style="font-size: 10pt; color: #d3d3d3;">Karun Ellango</p>
+      <br>
+    </div>
+  </body>
 </html>
