@@ -6,6 +6,10 @@
   padding-top: 30px;
   margin-top: -50px;
 }
+.about-text{
+  color: #d3d3d3;
+  margin: auto;
+}
 .aboutfirst{
   background: url(../imgs/aboutFirstBackground.jpg);
 }
@@ -18,4 +22,7 @@ html,body{
 }
 .blackEnd{
   background-color: #1d1c1c;
+}
+.test{
+  display: inline-block;
 }
