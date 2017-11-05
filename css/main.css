@@ -10,6 +10,14 @@
   color: #d3d3d3;
   margin: auto;
 }
+.general-text-onblack{
+  color: #ffffff  ;
+  margin: auto;
+}
+.general-text-white {
+  color: #ffffff  ;
+  margin: auto;
+}
 .aboutfirst{
   background: url(../imgs/aboutFirstBackground.jpg);
 }
@@ -29,6 +37,9 @@ html,body{
 .history{
   background: url(../imgs/history.jpg);
 }
+.scouting{
+  background: url(../imgs/contact.png);
+}
 .carousel-controls{
   position: absolute;
   width:300px;
@@ -38,4 +49,7 @@ html,body{
 .historyCarousel{
   padding-top: 80px;
   margin-top: -80px;
+}
+.test {
+  background-color: white;
 }
