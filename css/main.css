@@ -35,13 +35,6 @@ html,body{
   height: 9%;
   margin:0 auto;
 }
-.carousel-indicators{
-   top:0px;
-}
-.test{
-  padding-top: 80px;
-  margin-top: -54px;
-}
 .historyCarousel{
   padding-top: 80px;
   margin-top: -80px;
