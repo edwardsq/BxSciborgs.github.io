@@ -37,14 +37,14 @@
          </ul>
        </div>
      </nav>
-<br>
-<br>
-<br>
-   <div class="container row">
-      <div class="col-xs-12">
+<div class="scouting justify-content-center" id="scouting">
+  <br>
+  <br>
+  <br>
+   <div class="container text-center">
          <div class="form">
             <div class="control-group">
-               Location?
+               <p class="general-text-onblack"> Location </p>
                <select id="activityCatagory" name="Competitions" tabIndex="4">
                   <option value="Championships">Championships</option>
                   <option value="Hudson Valley">Hudson Valley</option>
@@ -52,24 +52,25 @@
                </select>
             </div>
             <div class="control-group">
-               <br> Team Number <br>
+               <br> <p class="general-text-onblack"> Team Number </p>
                <input type="number" min="1" step="1" name="Team_Number" id="teamnumber" onkeydown="javascript: ValidateNumberOnly()">
             </div>
             <form action="" class="Balls">
                <div class="control-group">
-                  <br> Balls <br>
+                 <br>
+                  <p class="general-text-onblack"> Balls </p>
                </div>
                <input type="number" min="0" step="1" name="Balls" id="balls" onkeydown="javascript: ValidateNumberOnly()">
             </form>
             <form action="" class="Gears">
                <div class="control-group">
-                  <br> Gears <br>
+                  <br> <p class="general-text-onblack"> Gears </p>
                </div>
                <input type="number" min="0" step="1" name="Gears" id="gears" onkeydown="javascript: ValidateNumberOnly()">
             </form>
             <form action="" class="Climbed">
                <div class="control-group">
-                  <br> Climbed?
+                  <br> <p class="general-text-onblack"> Climbed </p>
                   <select id="climbing" name="Climbed" tabIndex="3">
                      <option value="Yes">Yes</option>
                      <option value="No">No</option>
@@ -77,11 +78,13 @@
                </div>
             </form>
             <div>
+              <br>
                <button class="submit btn btn-primary">Save</button>
             </div>
          </div>
       </div>
    </div>
+ </div>
 <script src="https://www.gstatic.com/firebasejs/3.0.2/firebase.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
 <script src="../js/FirebaseHandler.js"></script>
