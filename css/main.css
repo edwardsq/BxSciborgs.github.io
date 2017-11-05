@@ -29,3 +29,12 @@ html,body{
 .history{
   background: url(../imgs/history.jpg);
 }
+.carousel-controls{
+ position:relative;
+  width:300px;
+  margin:0 auto;
+}
+
+.carousel-indicators{
+   top:0px;
+}
