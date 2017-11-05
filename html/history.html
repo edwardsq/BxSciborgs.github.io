@@ -1,41 +1,304 @@
 <!DOCTYPE html>
 <html ng-app="Dashboard">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width">
-      <title>Sciborgs Website</title>
-      <link rel="stylesheet" href="../css/main.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-     </head>
-   <body>
-     <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse">
-       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-       </button>
-       <a class="navbar-brand" href="../index.html#"><div class="navbar-link-text">Sciborgs</div></a>
-
-       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-         <ul class="navbar-nav mr-auto">
-           <li class="nav-item">
-             <a class="nav-link" href="../index.html#"><div class="navbar-link-text">Home</div></a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="../index.html#about"><div class="navbar-link-text">About</div></a>
-           </li>
-           <li class="nav-item active">
-             <a class="nav-link" href="history.html"><div class="navbar-link-text">History</div><span class="sr-only">(current)</span></a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="contact.html"><div class="navbar-link-text">Contact</div></a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="firebase.html"><div class="navbar-link-text">Scouting App</div></a>
-           </li>
-         </ul>
-       </div>
-     </nav>
-   </body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sciborgs Website</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html#">
+        <div class="navbar-link-text">Sciborgs</div>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#">
+              <div class="navbar-link-text">Home</div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#about">
+              <div class="navbar-link-text">About</div>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="history.html">
+              <div class="navbar-link-text">History</div>
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">
+              <div class="navbar-link-text">Contact</div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="firebase.html">
+              <div class="navbar-link-text">Scouting App</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="history" id="history">
+      <br>
+      <br>
+      <br>
+      <div id="historyCarousel" class="carousel slide" data-ride="carousel" data-interval="20000">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <div class="container justify-content-center">
+              <h1 class="text-center general-text" style="font-size: 42pt;">History</h1>
+              <p class="text-justify general-text" style="font-size: 15pt;">
+                The Sciborgs were formed in November of 2002 by three teachers and eight students, at The Bronx High School of Science, with the help of a Professor from Manhattan College. Unfortunately, it was a rough start for the founding members. When the team was started, there was little support from the school as well as very little funding to run a team that usually takes $50,000 to run. The team had too few tools, too small a work force and, as is the way of Bronx Science students, a 2 hour train ride home for each member. But as is also the way of Bronx Science Students, the team completed their robot and went on to compete at the NYC Regionals.
+                <br>
+                <br>   With the new school year at hand it came time to recruit new members. With most of the original team still intact, they set out upon the school and recruited a new set of about eight students. The new workspace for the team moved to Manhattan College and a new teacher, Mr.Omoloju, as well as new mentor, Jon Cook, had joined the team. With more students and growing interest, the team began to expand. With sponsors such as the Bronx Science Alumni, The Hennessey Family Foundation, Con-Edison, and the support of the school and family, the Sciborgs had a promising year ahead. After six weeks of work the team had created an award winning robot. At the 2004 NYC regionals the team reached the quarter finals and won the Delphi “Driving Tomorrow’s Technology” Award for an innovative stair climbing mechanism.
+                <br>
+                <br>   With the ’03-’04 year gone, most of the original team has graduated and the team lost 3 mentors. But with every graduation, there is a new freshmen class and new mentors. The team has grown in popularity within Bronx Science. The new year brought a multitude of new faces and skills, totaling over 60 members. The team’s new strength and numbers brought a much needed boost. The Sciborgs shop was relocated to a shop room within Bronx Science. As the ’04-’05 game was released, “Stack Attack”, build season kicked in and once again, according to the rules of FIRST, the robot was shipped off and competition was at hand. The team once again climbed the ladder and made it to the quarter finals. But as an added bonus, thanks to great leadership and organization, the team was awarded the Kleiner Perkins Caufield & Byers Entrepreneurship Award for great business planning and organization.
+                <br>
+                <br>   In ’05-’06 the team was a force to be reckoned with in Bronx Science, boasting over 60 members with more to come in the freshmen class. Not only had the sponsorship of the team increased funds to a $35,000 budget but with the new budget came a new mentor, Thomas Redding, a colleague of current mentor Jon Cook, and other new members. In all of the outreach to local community centers and word of mouth, the team recruited 2 core members from Hostos-Lincoln Academy for Science as well as two new 12th grade members and a multitude of freshmen, sophomores and juniors. Work continued on and as always, starting in January and going for six weeks, the robot was completed to compete in the “Aim High Challenge”. Along with robot building the team held computer classes at a local nursing home, Women in Engineering day and various other programs. The outreach program had increased tenfold and at the ’06 NYC regional, the Sciborgs were ready. Reaching the quarter-finals for the third year in a row was a disappointing blow, but not for long. The hard work and community outreach had paid off, because at the awards ceremony the Sciborgs won the Regional Engineering Inspiration Award, allowing them entrance into the Championships held in Atlanta, Georgia. The Georgia trip was one for the record books for the Sciborgs. it was the team’s first trip to the International championships and a long deserved trip after 3 years of dedicated work.
+                <br>
+                <br>   The ’06-’07 year brought many of the same things as years before – new members, new mentors, more funding and more robotics. But this year brought all of that, multiplied by two. With help from Sponsor Barry Weinberg, the Sciborgs worked with their female colleagues to form an all girls robotics team to build, compete and share ideas along side with. Both teams worked together in the same shop space to create two unique robotics designs to compete at NYC. The Sciborgs competed at both NJ and NYC regionals. At NJ, the Sciborgs were regional finalists thanks to their teammates and the monster defense driving brought by team captain, George Hsieh. At NYC, thanks to their new sister team the IRON “Fe” Maidens and consistent community outreach, they won the highest honor that FIRST awards, The Regional Chairman’s Award, as well as making it to the quarter finals. Their sister team, after only 5 months in creation and many community programs held, was awarded the Rookie All Star Award. These accomplishments granted BOTH teams entrance into the Championships. Once again giving them a chance to compete in the International finals.
+                <br>
+                <br>   The Sciborgs were the Connecticut Regional quarter-finalists and NYC Regional quarter-finalists in 2008. In 2009, the team won the Rockwell Automation and Innovation in Control Award and were NYC Regional finalists and the winner of the Connecticut Regional. The Sciborgs were once again finalists at the 2010 NYC Regional and won the Pit Safety Award. In 2012 and 2013, the team were NYC Regional quarter-finalists. Since then, the team has continued to grow, gaining new recruits and mentors yearly. More and more students are finding an interest and a passion in engineering and technology as they find their niche in the Sciborgs and FeMaidens community. The ’14-’15 year has brought new changes, thanks to the support of the Bronx Science Alumni Association. Preparation for a new, expanded construction shop began and was finally unveiled in January.
+                <br>
+                <br>   With new tools, a new captain and an everlasting spirit, the team will be heading into competition carrying knowledge and determination.
+              </p>
+              <br>
+              <br>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container justify-content-center">
+              <h1 class="text-center general-text" style="font-size: 42pt;">Alumni</h1>
+              <h1 class="text-center general-text" style="font-size: 16pt;">Captain</h1>
+              <p class="text-center general-text" style="font-size: 12pt;">
+                Danny Alel (2017)
+                <br> Arun Bishop (2016)
+                <br> Alex Sena (2015)
+                <br> Daniel Su (2014)
+                <br> William Long (2013)
+                <br> Ian Kaplan (2013)
+                <br> Eugene Lieberson (2012)
+                <br> Anthony John Mickalauskas (2011)
+                <br> Sameer Patel (2011)
+                <br> Jason Chen (2010)
+                <br> Christos Sideris (2009)
+                <br> Joel Pazhayampallil (2008)
+                <br> Simon Strauss (2008)
+                <br> George Hsieh (2007)
+                <br> Tom Ford (2006)
+                <br> Tyler Penkovsky (2005)
+                <br> Brian Skutch (2004)
+                <br> Jurgen Shestani (2003)
+                <br>
+                <br>
+              </p>
+              <h1 class="text-center general-text" style="font-size: 16pt;">Class of 2015</h1>
+              <p class="text-center general-text" style="font-size: 12pt;">
+                To Be Updated
+              </p>
+              <br>
+              <h1 class="text-center general-text" style="font-size: 16pt;">Class of 2014</h1>
+              <p class="text-center general-text" style="font-size: 12pt;">
+                Daniel Su – SUNY Stony Brook University
+                <br> William Alexander – New York University
+                <br> Billy Chen – New York University
+                <br> Mayur Baruah – New York University
+                <br> Jingyu Yao – Northeastern University
+                <br> Bruno Prela – Massachusetts Institute of Technology
+                <br> Mohammed Asker – University of Michigan
+              </p>
+              <br>
+              <h1 class="text-center general-text" style="font-size: 16pt;">Class of 2013</h1>
+              <p class="text-center general-text" style="font-size: 12pt;">
+                William Long – SUNY Stony Brook University
+                <br> Ian Kaplan – University of Washington
+                <br> Jonathan Azbel – New York Institute of Technology
+                <br> Philip To – Macaulay Honors College at Hunter College
+                <br> Tahzib Azad – SUNY Binghamton
+                <br> Daniel Donenfeld – Cornell University
+              </p>
+              <br>
+              <h1 class="text-center general-text" style="font-size: 16pt;">Class of 2012</h1>
+              <p class="text-center general-text" style="font-size: 12pt;">
+                Eugene Lieberson – Cornell University Kai Demlar – University of Illinois at Urbana-Champaign
+                <br> Alexander Roman – Carnegie Mellon University
+                <br> Alexander Crease – Olin College of Engineering
+              </p>
+              <br>
+              <h1 class="text-center general-text" style="font-size: 16pt;">Class of 2011</h1>
+              <p class="text-center general-text" style="font-size: 12pt;">
+                Anthony John Mickalauskas – Rensselaer Polytechnic Institute
+                <br> Sameer Patel – Drexel University
+              </p>
+              <br>
+              <h1 class="text-center general-text" style="font-size: 16pt;">Class of 2010</h1>
+              <p class="text-center general-text" style="font-size: 12pt;">
+                Jason Chen – St. John’s University
+                <br> Brian Smith – Brown University
+                <br> Christopher Jimenez – SUNY Stony Brook University
+                <br> Reevu Islam – City University of New York at City College
+                <br> Andrew Zhang – SUNY Stony Brook University
+                <br> Benjamin Diamond – City University of New York at City College
+              </p>
+              <br>
+              <h1 class="text-center general-text" style="font-size: 16pt;">Class of 2009</h1>
+              <p class="text-center general-text" style="font-size: 12pt;">
+                Michael Kaplan – Cornell University
+                <br> Christos Sideris – Cornell University
+                <br> Charlie Persaud – SUNY Stony Brook University
+                <br> Alexander Malashev – Carnegie Mellon University
+                <br> Sonny Sonkiya – University of Pennsylvania
+              </p>
+              <br>
+              <h1 class="text-center general-text" style="font-size: 16pt;">Class of 2008</h1>
+              <p class="text-center general-text" style="font-size: 12pt;">
+                Scott Carpman – Rensselaer Polytechnic Institute
+                <br> Stella Dennig – Tufts University
+                <br> Jinzhen Gong – Rensselaer Polytechnic Institute
+                <br> Isaiah Legare – Rensselaer Polytechnic Institute
+                <br> Joel Pazhayampallil – Carnegie Mellon University
+                <br> Syed Reza – Rochester Institute of Technology
+                <br> Eitan Sosner – Reed College
+                <br> Simon Strauss – Rensselaer Polytechnic Institute
+                <br> Yoriyasu Yano – University of California, Berkeley
+              </p>
+              <br>
+              <h1 class="text-center general-text" style="font-size: 16pt;">Class of 2007</h1>
+              <p class="text-center general-text" style="font-size: 12pt;">
+                Michael Aponte – Massachusetts Institute of Technology
+                <br> Antoinette Carey – SUNY Maritime
+                <br> Benjamin Chaidell – Yale University
+                <br> Vincent Chin – Rensselaer Polytechnic Institute
+                <br> Johnny Chu – Rochester Institute of Technology
+                <br> Wesley Cuevas – The Cooper Union for The Advancement of Science and Art
+                <br> Anthony Fischetti – Rensselaer Polytechnic Institute
+                <br> Alexandra Greenbaum – Rensselaer Polytechnic Institute
+                <br> Warren Hom – Rensselaer Polytechnic Institute
+                <br> George Hsieh – Rutgers University
+                <br> Sampson Lau – The Cooper Union for The Advancement of Science and Art
+                <br> Hemanth Nalamothu – USMA West Point
+                <br> Gena Rozenberg – Cornell University
+                <br> Jason Ruan – SUNY Binghamton
+                <br> Ly Ky Tran – CUNY Honors @ Hunter College
+              </p>
+              <br>
+              <h1 class="text-center general-text" style="font-size: 16pt;">Class of 2006</h1>
+              <p class="text-center general-text" style="font-size: 12pt;">
+                Mark Cortes – Rensselaer Polytechnic Institute
+                <br> Thomas Ford – Rensselaer Polytechnic Institute
+                <br> Jesus Janfan – CUNY Honors @ City College and Columbia University
+                <br> Julie Jurgela – SUNY Binghamton
+              </p>
+              </p>
+              <br>
+              <br>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container justify-content-center">
+              <h1 class="text-center general-text" style="font-size: 42pt;">Awards</h1>
+              <h1 class="text-center general-text" style="font-size: 16pt;">2016</h1>
+              <p class="text-center general-text" style="font-size: 12pt;">
+                NYC Regional - Quarter Finalist
+              </p>
+              <br>
+              <h1 class="text-center general-text" style="font-size: 16pt;">2013</h1>
+              <p class="text-center general-text" style="font-size: 12pt;">
+                NYC Regional - Quarter Finalist
+              </p>
+              <br>
+              <h1 class="text-center general-text" style="font-size: 16pt;">2012</h1>
+              <p class="text-center general-text" style="font-size: 12pt;">
+                NYC Regional - Quarter Finalist
+              </p>
+              <br>
+              <h1 class="text-center general-text" style="font-size: 16pt;">2010</h1>
+              <p class="text-center general-text" style="font-size: 12pt;">
+                NYC Regional - Finalist
+              </p>
+              <br>
+              <h1 class="text-center general-text" style="font-size: 16pt;">2009</h1>
+              <p class="text-center general-text" style="font-size: 12pt;">
+                NYC Regional - Finalist
+                <br> NYC Regional - Rockwell Automation Innovation in Control Award
+                <br> Connecticut Regional - Regional Winner
+              </p>
+              <br>
+              <h1 class="text-center general-text" style="font-size: 16pt;">2008</h1>
+              <p class="text-center general-text" style="font-size: 12pt;">
+                Connecticut Regional - Quarter Finalist
+                <br> NYC Regional - Quarter Finalist
+              </p>
+              <br>
+              <h1 class="text-center general-text" style="font-size: 16pt;">2007</h1>
+              <p class="text-center general-text" style="font-size: 12pt;">
+                NJ Regional - Finalist
+                <br> NYC Regional - Website Award
+                <br> NYC Regional - Chairman's Award
+              </p>
+              <br>
+              <h1 class="text-center general-text" style="font-size: 16pt;">2006</h1>
+              <p class="text-center general-text" style="font-size: 12pt;">
+                NYC Regional - Engineering Inspiration Award
+                <br> NYC Regional - Quarter Finalist ​
+              </p>
+              <br>
+              <h1 class="text-center general-text" style="font-size: 16pt;">2005</h1>
+              <p class="text-center general-text" style="font-size: 12pt;">
+                NYC Regional - Kleiner, Perkins, Caufield & Byers Entrepreneurship Award
+                <br> NYC Regional - Quarter Finalist
+              </p>
+              <br>
+              <h1 class="text-center general-text" style="font-size: 16pt;">2004</h1>
+              <p class="text-center general-text" style="font-size: 12pt;">
+                NYC Regional - Delphi "Driving Tomorrow's Technology" Award
+              </p>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#historyCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#historyCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="container-fluid yellowEnd ">
+      <div class="container col-md-4">
+        <br>
+        <p class="text-center">
+          <a href="https://www.instagram.com/sciborgs1155/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2000px-Instagram_logo_2016.svg.png" width="15%" class="img-fluid" alt="Responsive image" style="margin-right:17.75%;"></a>
+          <a href="https://www.facebook.com/Sciborgs/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/2000px-F_icon.svg.png" width="15%" class="img-fluid" alt="Responsive image" style=""></a>
+          <a href="https://www.youtube.com/user/sciborgs"><img src="https://cdn.fyne.in/mobi_commerce/55b7687b1401d/personalizer/svg/icon-youtube.svg" width="15%" class="img-fluid" alt="Responsive image" style="margin-left: 17.75%;"></a>
+        </p>
+        <br>
+      </div>
+    </div>
+    <div class="container-fluid blackEnd">
+      <br>
+      <p class="text-center" style="font-size: 10pt; color: #d3d3d3;">Karun Ellango</p>
+      <br>
+    </div>
+  </body>
 </html>
