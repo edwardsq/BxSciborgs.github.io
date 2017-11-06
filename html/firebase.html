@@ -55,38 +55,40 @@
       <br>
       <div class="container text-center">
         <div class="form">
-          <div class="control-group">
-            <p class="general-text-onblack" style="background-color: #211f1f; width: 6%;">Location</p>
-            <select id="activityCatagory" name="Competitions" tabIndex="4">
-              <option value="Championships">Championships</option>
+          <div class="form-group">
+            <label for="activityCatagory">
+              <p class="general-text-onblack" style="background-color: #2C2C2C;">Location</p>
+            </label>
+            <select class="form-control" id="activityCatagory" name="Competitions">
               <option value="Hudson Valley">Hudson Valley</option>
               <option value="NYC">NYC</option>
+              <option value="Championships">Championships</option>
             </select>
           </div>
-          <div class="control-group">
-            <br>
-            <p class="general-text-onblack" style="background-color: #211f1f; width: 10%;"> Team Number </p>
-            <input type="number" min="1" step="1" name="Team_Number" id="teamnumber" onkeydown="javascript: ValidateNumberOnly()">
+          <div class="form-group">
+            <label for="teamnumber">
+              <p class="general-text-onblack" style="background-color: #2C2C2C;">Team Number</p>
+            </label>
+            <textarea class="form-control" id="teamnumber" rows="1" name="Team #" onkeypress="return isNumber(event)"></textarea>
           </div>
-          <form action="" class="Balls">
-            <div class="control-group">
-              <br>
-              <p class="general-text-onblack" style="background-color: #211f1f; width: 4%;"> Balls </p>
+          <form>
+            <div class="form-group">
+              <label for="balls">
+                <p class="general-text-onblack" style="background-color: #2C2C2C;">Balls Shot</p>
+              </label>
+              <textarea class="form-control" id="balls" rows="1" name="Balls" onkeypress="return isNumber(event)"></textarea>
             </div>
-            <input type="number" min="0" step="1" name="Balls" id="balls" onkeydown="javascript: ValidateNumberOnly()">
-          </form>
-          <form action="" class="Gears">
-            <div class="control-group">
-              <br>
-              <p class="general-text-onblack" style="background-color: #211f1f; width: 5%;"> Gears </p>
+            <div class="form-group">
+              <label for="gears">
+                <p class="general-text-onblack" style="background-color: #2C2C2C;">Gears Placed</p>
+              </label>
+              <textarea class="form-control" id="gears" rows="1" name="Gears" onkeypress="return isNumber(event)"></textarea>
             </div>
-            <input type="number" min="0" step="1" name="Gears" id="gears" onkeydown="javascript: ValidateNumberOnly()">
-          </form>
-          <form action="" class="Climbed">
-            <div class="control-group">
-              <br>
-              <p class="general-text-onblack" style="background-color: #211f1f; width: 6%;"> Climbed </p>
-              <select id="climbing" name="Climbed" tabIndex="3">
+            <div class="form-group">
+              <label for="Climbed">
+                <p class="general-text-onblack" style="background-color: #2C2C2C;">Climbed?</p>
+              </label>
+              <select class="form-control" id="Climbed" name="Climbed">
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
               </select>
@@ -94,19 +96,26 @@
           </form>
           <div>
             <br>
-            <button class="submit btn btn-primary">Save</button>
+            <button class="submit btn btn-outline-primary btn-lg btn-block">Save</button>
+            <br>
+            <button class="reload btn btn-outline-primary btn-block" onClick="history.go(0)" VALUE="Refresh">Reload</button>
+            <br>
           </div>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
       </div>
-    </div>
-    </div>
     </div>
     <script src="https://www.gstatic.com/firebasejs/3.0.2/firebase.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
