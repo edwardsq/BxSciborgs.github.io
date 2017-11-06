@@ -36,9 +36,7 @@ messagingSenderId: "372162650684"
     var path = 'Competitions/' + document.getElementById("activityCatagory").value + '/Teams/' + document.getElementById("teamnumber").value;
     fb.database().ref().child(path).update(updates);
   });
-  function isNumberKey(evt){
-      var charCode = (evt.which) ? evt.which : event.keyCode
-      if (charCode > 31 && (charCode < 48 || charCode > 57))
-          return false;
-      return true;
-  }
+  function isNumberKey(){
+      if (event.keyCode > 31 && (event.keyCode < 48 || event.keyCode > 57)) {
+          event.returnValue = false;
+  }}
