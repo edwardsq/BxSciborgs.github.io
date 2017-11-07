@@ -43,6 +43,9 @@ html,body{
 .contact{
   background: url(../imgs/contact.jpg);
 }
+.sponsors{
+  background: url(../imgs/sponsors.jpg);
+}
 .carousel-controls{
   position: absolute;
   width:300px;
