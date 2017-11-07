@@ -38,7 +38,10 @@ html,body{
   background: url(../imgs/history.jpg);
 }
 .scouting{
-  background: url(../imgs/contact.png);
+  background: url(../imgs/scouting.png);
+}
+.contact{
+  background: url(../imgs/contact.jpg);
 }
 .carousel-controls{
   position: absolute;
