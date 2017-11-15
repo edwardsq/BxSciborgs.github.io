@@ -1,5 +1,5 @@
 .navbar-link-text {
-    color: #CCCC00;
+    color: #FAEC29;
 }
 .about{
   background: url(../imgs/aboutUsBackground.jpg);
@@ -26,7 +26,7 @@ html,body{
   overflow-y: auto;
 }
 .yellowEnd{
-  background-color: #9e9e2a;
+  background-color: #FAEC29;
 }
 .blackEnd{
   background-color: #1d1c1c;
@@ -35,7 +35,7 @@ html,body{
   display: inline-block;
 }
 .history{
-  background: url(../imgs/history.jpg);
+  background: url("http://www.tesrol.com.au/wp-content/uploads/2016/05/Dark-Grey.jpg");
 }
 .scouting{
   background: url(../imgs/scouting.png);
@@ -44,7 +44,7 @@ html,body{
   background: url(../imgs/contact.jpg);
 }
 .sponsors{
-  background: url(../imgs/sponsors.jpg);
+  background: url("https://sandbergwallpaper.com/wp-content/uploads/2014/09/515-61_image1-300x300.jpg");
 }
 .carousel-controls{
   position: absolute;
