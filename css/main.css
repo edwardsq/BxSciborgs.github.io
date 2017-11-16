@@ -1,6 +1,25 @@
 .navbar-link-text {
     color: #FAEC29;
 }
+.parallax {
+    /* The image used */
+    background: url(../imgs/FrontPagePicture.png);
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
 .about{
   background: url(../imgs/aboutUsBackground.jpg);
   padding-top: 60px;
@@ -24,6 +43,7 @@
 html,body{
   overflow-x: hidden;
   overflow-y: auto;
+  height: 100%;
 }
 .yellowEnd{
   background-color: #FAEC29;
