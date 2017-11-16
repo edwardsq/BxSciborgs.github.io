@@ -1,10 +1,17 @@
 $(document).ready(function() {
-  $('#calendar').fullCalendar({
-    editable: false, // Don't allow editing of events
-    handleWindowResize: true,
-    googleCalendarApiKey: 'AIzaSyBEP5YFCokRXgTKElHoCzq49Mj4zlpb98M',
-    events: {
-        googleCalendarId: 'bxscience.edu_orov21k09sm1sq0558q6julsbc@group.calendar.google.com'
-    }
-    })
+$('#calendar').fullCalendar({
+    header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: ''
+    },
+    eventSources: [{
+        googleCalendarApiKey: 'AIzaSyA1EmSAhtmmc76bCegYKOfb-ShUFo-kgJg',
+        googleCalendarId: 'bxscience.edu_orov21k09sm1sq0558q6julsbc@group.calendar.google.com',        
+        className: 'fc-event-email'
+    }],
+    selectable: true,
+    selectHelper: true,
+    editable: false  
+});
 });
