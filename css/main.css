@@ -35,7 +35,7 @@ html,body{
   display: inline-block;
 }
 .history{
-  background: url("http://www.tesrol.com.au/wp-content/uploads/2016/05/Dark-Grey.jpg");
+  background: url(../imgs/history.png);
 }
 .scouting{
   background: url(../imgs/scouting.png);
@@ -44,7 +44,7 @@ html,body{
   background: url(../imgs/contact.jpg);
 }
 .sponsors{
-  background: url("https://sandbergwallpaper.com/wp-content/uploads/2014/09/515-61_image1-300x300.jpg");
+  background: url(../imgs/history.png);
 }
 .carousel-controls{
   position: absolute;
