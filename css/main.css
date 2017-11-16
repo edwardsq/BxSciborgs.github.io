@@ -22,8 +22,8 @@
 }
 .about{
   background: url(../imgs/aboutUsBackground.jpg);
-  padding-top: 60px;
-  margin-top: -60px;
+  padding-top: 50px;
+  margin-top: -50px;
 }
 .general-text{
   color: #d3d3d3;
