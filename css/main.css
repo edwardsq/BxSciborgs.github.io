@@ -1,5 +1,15 @@
+@font-face {
+  font-family: 'cybertronregular';
+  src: url('cybertron-webfont.woff2') format('woff2'),
+       url('cybertron-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 .navbar-link-text {
-    color: #FAEC29;
+  font-family: 'cybertronregular', Arial, sans-serif;
+  font-weight:normal;
+  font-style:normal;
+  color: #FAEC29;
 }
 .parallax {
     /* The image used */
@@ -14,7 +24,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 @media only screen and (max-device-width: 1024px) {
     .parallax {
         background-attachment: scroll;
