@@ -5,12 +5,14 @@
   font-weight: normal;
   font-style: normal;
 }
-.navbar-link-text {
+.navbar-link-text-header {
   font-family: 'cybertronregular', Arial, sans-serif;
   font-weight:normal;
   font-style:normal;
   color: #FAEC29;
-  font-size: 110%;
+}
+.navbar-link-text {
+  color: #FAEC29;
 }
 .parallax {
     /* The image used */
