@@ -81,12 +81,22 @@ html,body{
   background: url(../imgs/history.png);
 }
 .carousel-controls{
-  position: absolute;
   width:300px;
   height: 9%;
-  margin:0 auto;
+  margin: 0 auto;
 }
 .historyCarousel{
   padding-top: 80px;
   margin-top: -80px;
+}
+.float_center {
+  float: right;
+
+  position: relative;
+  left: -50%; /* or right 50% */
+  text-align: left;
+}
+.float_center > .child {
+  position: relative;
+  left: 50%;
 }
