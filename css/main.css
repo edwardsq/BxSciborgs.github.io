@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:500');
 @font-face {
   font-family: 'cybertronregular';
   src: url('cybertron-webfont.woff2') format('woff2'),
@@ -12,6 +13,7 @@
   color: #FAEC29;
 }
 .navbar-link-text {
+  font-family: 'Quicksand';  
   color: #FAEC29;
 }
 .parallax {
@@ -38,14 +40,17 @@
   margin-top: -50px;
 }
 .general-text{
+  font-family: 'Quicksand';  
   color: #d3d3d3;
   margin: auto;
 }
 .general-text-onblack{
+  font-family: 'Quicksand';  
   color: #ffffff  ;
   margin: auto;
 }
 .general-text-white {
+  font-family: 'Quicksand';  
   color: white;
   margin: auto;
 }
@@ -62,9 +67,6 @@ html,body{
 }
 .blackEnd{
   background-color: #1d1c1c;
-}
-.test{
-  display: inline-block;
 }
 .history{
   background: url(../imgs/history.png);
@@ -87,7 +89,4 @@ html,body{
 .historyCarousel{
   padding-top: 80px;
   margin-top: -80px;
-}
-.test {
-  background-color: white;
 }
