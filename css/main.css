@@ -100,3 +100,10 @@ html,body{
   position: relative;
   left: 50%;
 }
+.test{
+  margin: auto;
+  text-decoration: none;
+  text-align: center;
+  max-width: 100px;
+  margin-left: 4%;
+}
