@@ -13,7 +13,7 @@
   color: #FAEC29;
 }
 .navbar-link-text {
-  font-family: 'Quicksand';  
+  font-family: 'Quicksand';
   color: #FAEC29;
 }
 .parallax {
@@ -40,17 +40,17 @@
   margin-top: -50px;
 }
 .general-text{
-  font-family: 'Quicksand';  
+  font-family: 'Quicksand';
   color: #d3d3d3;
   margin: auto;
 }
 .general-text-onblack{
-  font-family: 'Quicksand';  
+  font-family: 'Quicksand';
   color: #ffffff  ;
   margin: auto;
 }
 .general-text-white {
-  font-family: 'Quicksand';  
+  font-family: 'Quicksand';
   color: white;
   margin: auto;
 }
@@ -69,7 +69,7 @@ html,body{
   background-color: #1d1c1c;
 }
 .history{
-  background: url(../imgs/history.png);
+  background: url(../imgs/general.png);
 }
 .scouting{
   background: url(../imgs/scouting.png);
@@ -78,7 +78,7 @@ html,body{
   background: url(../imgs/contact.jpg);
 }
 .sponsors{
-  background: url(../imgs/history.png);
+  background: url(../imgs/general.png);
 }
 .carousel-controls{
   width:300px;
