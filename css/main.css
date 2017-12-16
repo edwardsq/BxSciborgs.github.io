@@ -68,7 +68,7 @@ html,body{
 .blackEnd{
   background-color: #1d1c1c;
 }
-.history{
+.generalBackground{
   background: url(../imgs/general.png);
 }
 .scouting{
@@ -76,9 +76,6 @@ html,body{
 }
 .contact{
   background: url(../imgs/contact.jpg);
-}
-.sponsors{
-  background: url(../imgs/general.png);
 }
 .carousel-controls{
   width:300px;
