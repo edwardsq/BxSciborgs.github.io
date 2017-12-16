@@ -14,7 +14,7 @@
 }
 .navbar-link-text {
   font-family: 'Quicksand';
-  color: #FAEC29;
+  color: #FAEC29 !important;
 }
 .parallax {
     /* The image used */
@@ -108,3 +108,9 @@ html,body{
   max-width: 100px;
   margin-left: 4%;
  }
+.dropdown-menu{
+  background-color: #292b2c !important;
+}
+.dropdown-item {
+  color: #FAEC29 !important;
+}
