@@ -49,6 +49,11 @@
   color: #ffffff  ;
   margin: auto;
 }
+.general-text-yellow{
+  font-family: 'Quicksand';
+  color: #FAEC29;
+  margin: auto;
+}
 .general-text-white {
   font-family: 'Quicksand';
   color: white;
