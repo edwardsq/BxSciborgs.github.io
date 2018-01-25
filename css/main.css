@@ -36,8 +36,6 @@
 }
 .about{
   background: url(../imgs/aboutUsBackground.jpg);
-  padding-top: 50px;
-  margin-top: -50px;
 }
 .general-text{
   font-family: 'Quicksand';
@@ -115,4 +113,8 @@ html,body{
 }
 .dropdown-item {
   color: #FAEC29 !important;
+}
+.test2{
+  padding-top: 50px;
+  margin-top: -50px;
 }
