@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:500');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 @font-face {
   font-family: 'cybertronregular';
   src: url('cybertron-webfont.woff2') format('woff2'),
@@ -13,7 +13,7 @@
   color: #FAEC29;
 }
 .navbar-link-text {
-  font-family: 'Quicksand';
+  font-family: 'Lato', sans-serif;
   color: #FAEC29 !important;
 }
 .parallax {
@@ -38,24 +38,27 @@
   background: url(../imgs/aboutUsBackground.jpg);
 }
 .general-text{
-  font-family: 'Quicksand';
+  font-family: 'Lato', sans-serif;
   color: #d3d3d3;
   margin: auto;
 }
 .general-text-onblack{
-  font-family: 'Quicksand';
+  font-family: 'Lato', sans-serif;
   color: #ffffff  ;
   margin: auto;
 }
 .general-text-yellow{
-  font-family: 'Quicksand';
+  font-family: 'Lato', sans-serif;
   color: #FAEC29;
   margin: auto;
 }
 .general-text-white {
-  font-family: 'Quicksand';
+  font-family: 'Lato', sans-serif;
   color: white;
   margin: auto;
+}
+.dropdown-item:focus, .dropdown-item:hover{
+  background-color: #707070 !important;
 }
 .aboutfirst{
   background: url(../imgs/aboutFirstBackground.jpg);
@@ -64,6 +67,7 @@ html,body{
   overflow-x: hidden;
   overflow-y: auto;
   height: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 .yellowEnd{
   background-color: #FAEC29;
